@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Rohit's Cafe</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="img/logo.png" class="logo">
+                 
+                <ul class="main-nav animated SlideInDown" id="check-class">
+                    <li><a href="#">COFFEE Delivery</a></li>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+        <h1>WELCOM TO <span class="colorchange">ROHIT'S CAFE</span>.<br>
+            CAFE FOR COFFEE LOVERS.</h1>
+            <a href="#" class="btn btn-full"> Click to order</a>   
+            <a href="#" class="btn btn-nav"> Show me more</a> 
+        </div>
+    </header>
+    <script type="text/javascript">
+        
+        function slideshow(){
+            var x = document.getElementById('check-class');
+            if(x.style.display === "none"){
+                x.style.display="block";
+            }else{
+                x.style.display="none";
+            }
+        }
+    </script>
+    <footer><p>&copy;Copyright Rohit's Cafe 2020</p>
+        <div>Thanx for visiting</div></footer>
+</body>
+</html>
